@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#073b75">
+<meta name="description" content="Shaping Future Microfinance Pvt. Ltd. - SHG support, financial awareness, community development, careers and customer enquiries.">
+<title>Shaping Future Microfinance Pvt. Ltd.</title>
+
+<style>
+:root {
+  --blue:#073b75;
+  --accent:#0879d9;
+  --light:#f2f7fd;
+  --text:#203249;
+  --muted:#64748b;
+  --white:#fff;
+  --border:#dce6f1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.7}
+a{color:var(--accent)}
+button,input,select,textarea{font:inherit}
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:18px;padding:12px 6%;background:white;
+  position:sticky;top:0;z-index:10;
+  box-shadow:0 2px 12px #00000010;flex-wrap:wrap
+}
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.header-logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+.logo{font-size:20px;font-weight:800;color:var(--blue);line-height:1.2}
+.logo small{display:block;font-size:10px;letter-spacing:1.2px}
+nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--text);font-size:13px;font-weight:bold}
+nav a:hover{color:var(--accent)}
+.btn{
+ display:inline-block;border:0;border-radius:7px;padding:12px 19px;
+ background:var(--accent);color:white;text-decoration:none;font-weight:bold;
+ cursor:pointer;text-align:center
+}
+.btn-light{background:white;color:var(--blue)}
+.lang{background:#e7f1ff;color:var(--blue);border:0;border-radius:7px;padding:10px;cursor:pointer}
+.hero{
+ background:linear-gradient(120deg,#052c59,#0879d9);
+ color:white;padding:100px 8%;min-height:440px;
+ display:flex;align-items:center
+}
+.hero-inner{max-width:800px}
+.eyebrow{font-weight:bold;letter-spacing:2px;text-transform:uppercase;font-size:12px;color:#b9ddff}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.15;margin:15px 0 22px}
+.hero p{font-size:18px;max-width:700px;margin-bottom:28px}
+.hero .btn{margin:0 10px 10px 0}
+section{padding:72px 7%}
+.section-title{text-align:center;font-size:32px;color:var(--blue);margin-bottom:12px}
+.intro{text-align:center;color:var(--muted);max-width:780px;margin:0 auto 35px}
+.about,.careers,.services-alt{background:var(--light)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{
+ background:white;border:1px solid var(--border);border-radius:13px;
+ padding:26px;box-shadow:0 7px 22px #1234560b
+}
+.card .symbol{font-size:35px;margin-bottom:8px}
+.card h3{color:var(--blue);margin-bottom:10px}
+.card p{color:var(--muted);margin-bottom:14px}
+.card a{font-weight:bold;text-decoration:none}
+.banner-note{margin-top:28px;padding:22px;background:#e5f2ff;border-left:5px solid var(--accent);border-radius:6px}
+.career-box{
+ max-width:680px;margin:auto;background:white;border:1px solid var(--border);
+ padding:35px;border-radius:12px;text-align:center;box-shadow:0 4px 15px #00000008;
+}
+.career-box p{margin-bottom:20px;font-size:16px;color:var(--text)}
+form{max-width:780px;margin:auto;background:white;border:1px solid var(--border);padding:28px;border-radius:12px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:15px}
+.full{grid-column:1/-1}
+label{display:block;font-weight:bold;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd7e5;border-radius:6px;background:white}
+textarea{min-height:120px;resize:vertical}
+.status{margin-top:15px;font-weight:bold;overflow-wrap:anywhere}
+.contact{background:var(--blue);color:white}
+.contact .section-title{color:white}
+.contact .intro{color:#d9e9ff}
+.contact-info{text-align:center}
+.contact-info p{margin:8px 0;font-size:16px}
+.contact-info a{color:white;font-weight:bold;text-decoration:none}
+footer{background:#05284e;color:white;text-align:center;padding:28px 7%;font-size:14px}
+footer a{color:white}
+footer p{margin:5px}
+[hidden]{display:none!important}
+@media(max-width:760px){
+ header{position:relative;padding:15px 5%}
+ nav{width:100%;gap:12px}
+ .hero{padding:65px 7%}
+ section{padding:48px 6%}
+ .form-grid{grid-template-columns:1fr}
+ .full{grid-column:auto}
+ form{padding:20px}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <a href="#home" class="header-logo-container">
+    <img src="sfmf.png" alt="Shaping Future Logo" class="header-logo-img">
+    <div class="logo">Shaping Future<small>MICROFINANCE PVT. LTD.</small></div>
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="#home" data-en="Home" data-hi="होम">Home</a>
+    <a href="#about" data-en="About Us" data-hi="हमारे बारे में">About Us</a>
+    <a href="#services" data-en="Services" data-hi="सेवाएँ">Services</a>
+    <a href="#shg" data-en="SHG & Loans" data-hi="SHG और ऋण">SHG & Loans</a>
+    <a href="#careers" data-en="Careers" data-hi="करियर">Careers</a>
+    <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
+    <button class="lang" id="langButton" type="button">हिन्दी</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div class="eyebrow">Community • Opportunity • Responsibility</div>
+  <h1 data-en="Empowering Communities. Shaping a Better Future."
+      data-hi="समुदायों को सशक्त बनाना, बेहतर भविष्य बनाना।">
+    Empowering Communities. Shaping a Better Future.
+  </h1>
+  <p data-en="Supporting financial awareness, community development and responsible financial inclusion through a people-focused approach."
+     data-hi="लोगों को केंद्र में रखकर वित्तीय जागरूकता, सामुदायिक विकास और जिम्मेदार वित्तीय समावेशन को बढ़ावा देना।">
+    Supporting financial awareness, community development and responsible financial inclusion through a people-focused approach.
+  </p>
+  <a class="btn btn-light" href="#about" data-en="Explore Our Company" data-hi="हमारी कंपनी जानें">Explore Our Company</a>
+  <a class="btn" href="#contact" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a>
+ </div>
+</section>
+
+<section id="about" class="about">
+ <h2 class="section-title" data-en="About Shaping Future" data-hi="शेपिंग फ्यूचर के बारे में">About Shaping Future</h2>
+ <p class="intro" data-en="Our aim is to support communities with accessible information, transparent communication and responsible practices."
+ data-hi="हमारा उद्देश्य सुलभ जानकारी, पारदर्शी संवाद और जिम्मेदार प्रक्रियाओं के माध्यम से समुदायों को सहयोग देना है।">
+ Our aim is to support communities with accessible information, transparent communication and responsible practices.
+ </p>
+ <div class="grid">
+  <article class="card"><div class="symbol">🎯</div><h3 data-en="Our Mission" data-hi="हमारा मिशन">Our Mission</h3><p data-en="Encouraging financial awareness, responsible decisions and community participation." data-hi="वित्तीय जागरूकता, जिम्मेदार निर्णय और सामुदायिक भागीदारी को प्रोत्साहित करना।">Encouraging financial awareness, responsible decisions and community participation.</p></article>
+  <article class="card"><div class="symbol">🤝</div><h3 data-en="Our Approach" data-hi="हमारा दृष्टिकोण">Our Approach</h3><p data-en="Transparency, respectful service, accountability and clear communication." data-hi="पारदर्शिता, सम्मानजनक सेवा, जवाबदेही और स्पष्ट संवाद।">Transparency, respectful service, accountability and clear communication.</p></article>
+  <article class="card"><div class="symbol">🌱</div><h3 data-en="Community Development" data-hi="सामुदायिक विकास">Community Development</h3><p data-en="Promoting financial literacy and community-led development." data-hi="वित्तीय साक्षरता और समुदाय आधारित विकास को बढ़ावा देना।">Promoting financial literacy and community-led development.</p></article>
+ </div>
+</section>
+
+<section id="services">
+ <h2 class="section-title" data-en="Our Services" data-hi="हमारी सेवाएँ">Our Services</h2>
+ <p class="intro" data-en="Explore our community support and financial information services. Actual products and terms are subject to applicable approvals."
+ data-hi="हमारी सामुदायिक सहायता और वित्तीय जानकारी सेवाओं को जानें। वास्तविक उत्पाद और शर्तें आवश्यक अनुमतियों के अधीन हैं।">
+ Explore our community support and financial information services.
+ </p>
+ <div class="grid">
+  <article class="card"><div class="symbol">👥</div><h3>SHG Support</h3><p>Information about Self-Help Groups, group participation and financial awareness.</p><a href="#shg">Learn More →</a></article>
+  <article class="card"><div class="symbol">💳</div><h3>Loan Information</h3><p>Understand application steps, eligibility checks, repayment responsibilities and terms.</p><a href="#shg">Learn More →</a></article>
+  <article class="card"><div class="symbol">📚</div><h3>Financial Awareness</h3><p>Learn about budgeting, saving habits, responsible borrowing and fraud prevention.</p><a href="#shg">Learn More →</a></article>
+  <article class="card"><div class="symbol">💼</div><h3>Career Opportunities</h3><p>Explore opportunities in field operations, member services and administration.</p><a href="#careers">Apply Now →</a></article>
+ </div>
+</section>
+
+<section id="shg" class="services-alt">
+ <h2 class="section-title" data-en="SHG, Loans, RD & FD Information" data-hi="SHG, ऋण, RD और FD की जानकारी">SHG, Loans, RD & FD Information</h2>
+ <p class="intro" data-en="General guidance for individuals and groups. Product availability, eligibility, charges and approvals must be confirmed officially."
+ data-hi="व्यक्तियों और समूहों के लिए सामान्य मार्गदर्शन। उत्पादों की उपलब्धता, पात्रता, शुल्क और स्वीकृति की आधिकारिक पुष्टि आवश्यक है।">
+ General guidance for individuals and groups.
+ </p>
+ <div class="grid">
+  <article class="card"><h3>1. SHG Support</h3><p>Learn about group participation, financial literacy and enquiry procedures.</p></article>
+  <article class="card"><h3>2. Loan Enquiry</h3><p>Ask about eligibility, required documents, applicable charges and repayment terms. An enquiry does not guarantee loan approval.</p></article>
+  <article class="card"><h3>3. RD / FD Information</h3><p>Contact the company to enquire about savings-related information. Deposit products may only be offered where the company is legally authorized.</p></article>
+ </div>
+ <div class="banner-note"><strong>Important Notice</strong><p>This website does not guarantee loans, deposits or financial returns. Verify all applicable terms and legal authorizations before proceeding. Never pay an unofficial agent.</p></div>
+</section>
+
+<section id="careers" class="careers">
+ <h2 class="section-title" data-en="Careers at Shaping Future" data-hi="शेपिंग फ्यूचर में करियर">Careers at Shaping Future</h2>
+ <p class="intro" data-en="Join our growing team and shape a better future together." data-hi="हमारी बढ़ती टीम से जुड़ें और मिलकर एक बेहतर भविष्य बनाएं।">Join our growing team and shape a better future together.</p>
+ 
+ <div class="career-box">
+  <h3 style="color:var(--blue); margin-bottom:12px;">Apply For Job / नौकरी के लिए आवेदन करें</h3>
+  <p data-en="Click the button below to open our official recruitment application form." data-hi="हमारा आधिकारिक भर्ती आवेदन पत्र खोलने के लिए नीचे दिए गए बटन पर क्लिक करें।">
+    Click the button below to open our official recruitment application form.
+  </p>
+  <a href="https://forms.gle/xCbJwCqwh99zea549" target="_blank" class="btn" style="font-size:16px; padding:14px 28px;">
+    Fill Application Form / फॉर्म भरें ↗
+  </a>
+ </div>
+</section>
+
+<section id="contact">
+ <h2 class="section-title" data-en="Contact Us" data-hi="हमसे संपर्क करें">Contact Us</h2>
+ <p class="intro" data-en="For company information, SHG enquiries and recruitment questions, contact our team."
+ data-hi="कंपनी की जानकारी, SHG पूछताछ और भर्ती संबंधी प्रश्नों के लिए संपर्क करें।">
+ For company information, SHG enquiries and recruitment questions, contact our team.
+ </p>
+ <form id="contactForm">
+  <div class="form-grid">
+   <div class="field"><label for="contactName">Your Name *</label><input id="contactName" name="name" required maxlength="100"></div>
+   <div class="field"><label for="contactEmail">Email Address *</label><input id="contactEmail" name="email" type="email" required maxlength="150"></div>
+   <div class="field full"><label for="contactSubject">Enquiry Type *</label><select id="contactSubject" name="subject" required><option value="">Select an option</option><option>General Enquiry</option><option>SHG Information</option><option>Loan Information</option><option>RD / FD Information</option><option>Careers / Recruitment</option><option>Other</option></select></div>
+   <div class="field full"><label for="contactMessage">Your Message *</label><textarea id="contactMessage" name="message" required maxlength="3000"></textarea></div>
+  </div>
+  <button class="btn" type="submit">Send Enquiry</button>
+  <p id="contactStatus" class="status" role="status"></p>
+ </form>
+</section>
+
+<section class="contact">
+ <div class="contact-info">
+  <h2 class="section-title">Get in Touch</h2>
+  <p><strong>Shaping Future Microfinance Pvt. Ltd.</strong></p>
+  <p>Phone: <a href="tel:9648361634">+91 9648361634</a></p>
+  <p>Email: <a href="mailto:shapingfuture22@gmail.com">shapingfuture22@gmail.com</a></p>
+  <p>For official enquiries, please call or email us directly.</p>
+ </div>
+</section>
+
+<section id="privacy">
+ <h2 class="section-title">Privacy Notice</h2>
+ <p class="intro">Information submitted through forms should be used only for the relevant enquiry or recruitment process, restricted to authorized personnel, and retained only as necessary. Do not submit sensitive personal or financial information.</p>
+</section>
+</main>
+
+<footer>
+ <p>© <span id="year"></span> Shaping Future Microfinance Pvt. Ltd.</p>
+ <p><a href="#privacy">Privacy Notice</a> | <a href="mailto:shapingfuture22@gmail.com">Contact</a></p>
+ <p>Website information does not constitute a financial offer or guarantee.</p>
+</footer>
+
+<script>
+const GOOGLE_SCRIPT_URL = "PASTE_YOUR_DEPLOYED_APPS_SCRIPT_EXEC_URL_HERE";
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Hindi / English toggle
+let language = "en";
+document.getElementById("langButton").addEventListener("click", function () {
+  language = language === "en" ? "hi" : "en";
+  document.documentElement.lang = language;
+  document.querySelectorAll("[data-en][data-hi]").forEach(function (el) {
+    el.textContent = el.getAttribute("data-" + language);
+  });
+  this.textContent = language === "en" ? "हिन्दी" : "English";
+});
+
+async function submitWebsiteForm(event, type) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const status = document.getElementById("contactStatus");
+  const button = form.querySelector('button[type="submit"]');
+
+  if (!form.reportValidity()) return;
+
+  if (!GOOGLE_SCRIPT_URL ||
+      !GOOGLE_SCRIPT_URL.startsWith("https://script.google.com/")) {
+    status.textContent = "Form setup is incomplete. Please email shapingfuture22@gmail.com.";
+    return;
+  }
+
+  const data = Object.fromEntries(new FormData(form).entries());
+  data.formType = type;
+  data.source = "Shaping Future Website";
+
+  button.disabled = true;
+  status.textContent = "Submitting...";
+
+  try {
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {"Content-Type": "text/plain;charset=utf-8"},
+      body: JSON.stringify(data)
+    });
+
+    status.textContent =
+      "Request sent. Please verify receipt if a response is not received.";
+    form.reset();
+  } catch (error) {
+    status.textContent =
+      "Unable to send the request. Please email shapingfuture22@gmail.com.";
+  } finally {
+    button.disabled = false;
+  }
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  submitWebsiteForm(e, "contact");
+});
+</script>
+</body>
+</html>
