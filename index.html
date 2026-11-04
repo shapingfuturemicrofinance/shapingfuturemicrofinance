@@ -50,153 +50,53 @@ nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 nav a{text-decoration:none;color:var(--text);font-size:13px;font-weight:bold}
 nav a:hover{color:var(--accent)}
 .btn{display:inline-block;border:0;border-radius:7px;padding:12px 19px;background:var(--accent);color:white;text-decoration:none;font-weight:bold;cursor:pointer;text-align:center}
-.btn-light{background:white;color:var(--blue)}
-.btn-whatsapp{background:#128c4a;color:#fff}
+.btn-light{background:white;color:var(--blue)}.btn-whatsapp{background:#128c4a;color:#fff}
 .lang{background:#e7f1ff;color:var(--blue);border:0;border-radius:7px;padding:10px;cursor:pointer}
 .hero{background:linear-gradient(rgba(5,44,89,.85),rgba(8,121,217,.85)),url('https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;color:white;padding:80px 8%;min-height:480px;display:flex;align-items:center;justify-content:center;text-align:center}
 .hero-inner{max-width:800px;display:flex;flex-direction:column;align-items:center}
 .hero-logo-img{width:130px;height:auto;margin-bottom:20px;background:white;padding:8px;border-radius:50%;box-shadow:0 4px 15px rgba(0,0,0,.3)}
 .eyebrow{font-weight:bold;letter-spacing:2px;text-transform:uppercase;font-size:12px;color:#b9ddff}
-h1{font-size:clamp(34px,5vw,58px);line-height:1.15;margin:15px 0 22px}
-.hero p{font-size:18px;max-width:700px;margin-bottom:28px}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.15;margin:15px 0 22px}.hero p{font-size:18px;max-width:700px;margin-bottom:28px}
 .hero-buttons{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-section{padding:72px 7%}
-.section-title{text-align:center;font-size:32px;color:var(--blue);margin-bottom:12px}
+section{padding:72px 7%}.section-title{text-align:center;font-size:32px;color:var(--blue);margin-bottom:12px}
 .intro{text-align:center;color:var(--muted);max-width:780px;margin:0 auto 35px}
 .about,.careers,.services-alt{background:var(--light)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
 .card{background:white;border:1px solid var(--border);border-radius:13px;padding:22px;box-shadow:0 7px 22px #1234560b;overflow:hidden;display:flex;flex-direction:column}
 .card-img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:15px}
-.card h3{color:var(--blue);margin-bottom:10px}
-.card p{color:var(--muted);margin-bottom:14px;flex-grow:1}
-.card a{font-weight:bold;text-decoration:none}
+.card h3{color:var(--blue);margin-bottom:10px}.card p{color:var(--muted);margin-bottom:14px;flex-grow:1}.card a{font-weight:bold;text-decoration:none}
 .banner-note{margin-top:28px;padding:22px;background:#e5f2ff;border-left:5px solid var(--accent);border-radius:6px}
 .career-box{max-width:750px;margin:auto;background:white;border:1px solid var(--border);padding:35px;border-radius:12px;text-align:center;box-shadow:0 4px 15px #00000008}
-.career-box-img{width:100%;max-height:250px;object-fit:cover;border-radius:8px;margin-bottom:20px}
-.career-box p{margin-bottom:20px;font-size:16px;color:var(--text)}
+.career-box-img{width:100%;max-height:250px;object-fit:cover;border-radius:8px;margin-bottom:20px}.career-box p{margin-bottom:20px;font-size:16px;color:var(--text)}
 form{max-width:780px;margin:auto;background:white;border:1px solid var(--border);padding:28px;border-radius:12px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.field{margin-bottom:15px}.full{grid-column:1/-1}
-label{display:block;font-weight:bold;margin-bottom:6px}
-input,select,textarea{width:100%;padding:12px;border:1px solid #cbd7e5;border-radius:6px;background:white}
-textarea{min-height:120px;resize:vertical}
-.contact{background:var(--blue);color:white}
-.contact .section-title{color:white}.contact .intro{color:#d9e9ff}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{margin-bottom:15px}.full{grid-column:1/-1}
+label{display:block;font-weight:bold;margin-bottom:6px}input,select,textarea{width:100%;padding:12px;border:1px solid #cbd7e5;border-radius:6px;background:white}textarea{min-height:120px;resize:vertical}
+.contact{background:var(--blue);color:white}.contact .section-title{color:white}.contact .intro{color:#d9e9ff}
 .contact-info{text-align:center}.contact-info p{margin:8px 0;font-size:16px}.contact-info a{color:white;font-weight:bold;text-decoration:none}
 .contact-ctas{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
-footer{background:#05284e;color:white;text-align:center;padding:30px 7%;font-size:14px}
-footer a{color:white}footer p{margin:7px 0}
+footer{background:#05284e;color:white;text-align:center;padding:30px 7%;font-size:14px}footer a{color:white}footer p{margin:7px 0}
 .footer-company{max-width:900px;margin:14px auto;padding:14px 18px;border:1px solid #ffffff40;border-radius:8px}
 @media(max-width:760px){header{position:relative;padding:15px 5%}nav{width:100%;gap:12px}.hero{padding:65px 7%}section{padding:48px 6%}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}form{padding:20px}}
 </style>
 </head>
 <body>
 <header>
-  <a href="#home" class="header-logo-container">
-    <img src="sfmf.png" alt="Shaping Future logo" class="header-logo-img">
-    <div class="logo">Shaping Future<small>MICROFINANCE PVT. LTD.</small></div>
-  </a>
+  <a href="#home" class="header-logo-container"><img src="sfmf.png" alt="Shaping Future logo" class="header-logo-img"><div class="logo">Shaping Future<small>MICROFINANCE PVT. LTD.</small></div></a>
   <nav aria-label="Main navigation">
-    <a href="#home" data-en="Home" data-hi="होम">Home</a>
-    <a href="#about" data-en="About Us" data-hi="हमारे बारे में">About Us</a>
-    <a href="#services" data-en="Services" data-hi="सेवाएँ">Services</a>
-    <a href="#shg" data-en="SHG & Loans" data-hi="SHG और ऋण">SHG और ऋण</a>
-    <a href="#careers" data-en="Careers" data-hi="करियर">Careers</a>
-    <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
-    <button class="lang" id="langButton" type="button" aria-label="Switch page language">हिन्दी</button>
+    <a href="#home" data-en="Home" data-hi="होम">Home</a><a href="#about" data-en="About Us" data-hi="हमारे बारे में">About Us</a><a href="#services" data-en="Services" data-hi="सेवाएँ">Services</a><a href="#shg" data-en="SHG & Loans" data-hi="SHG और ऋण">SHG और ऋण</a><a href="#careers" data-en="Careers" data-hi="करियर">Careers</a><a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a><button class="lang" id="langButton" type="button" aria-label="Switch page language">हिन्दी</button>
   </nav>
 </header>
 <main>
-<section class="hero" id="home"><div class="hero-inner">
-  <img src="sfmf.png" alt="Shaping Future Microfinance logo" class="hero-logo-img">
-  <div class="eyebrow">Community • Opportunity • Responsibility</div>
-  <h1 data-en="Empowering Communities. Shaping a Better Future." data-hi="समुदायों को सशक्त बनाना, बेहतर भविष्य बनाना।">Empowering Communities. Shaping a Better Future.</h1>
-  <p data-en="Supporting financial awareness, community development and responsible financial inclusion through a people-focused approach." data-hi="लोगों को केंद्र में रखकर वित्तीय जागरूकता, सामुदायिक विकास और जिम्मेदार वित्तीय समावेशन को बढ़ावा देना।">Supporting financial awareness, community development and responsible financial inclusion through a people-focused approach.</p>
-  <div class="hero-buttons"><a class="btn btn-light" href="#about">Explore Our Company</a><a class="btn" href="#contact">Contact Us</a></div>
-</div></section>
-<section id="about" class="about">
-  <h2 class="section-title">About Shaping Future</h2>
-  <p class="intro">Our aim is to support communities with accessible information, transparent communication and responsible practices.</p>
-  <div class="grid">
-    <article class="card"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="People collaborating on community initiatives" class="card-img" loading="lazy"><h3>Our Mission</h3><p>Encouraging financial awareness, responsible decisions and community participation.</p></article>
-    <article class="card"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Professional team discussion" class="card-img" loading="lazy"><h3>Our Approach</h3><p>Transparency, respectful service, accountability and clear communication.</p></article>
-    <article class="card"><img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=600&q=80" alt="Community members working together" class="card-img" loading="lazy"><h3>Community Development</h3><p>Promoting financial literacy and community-led development.</p></article>
-  </div>
-</section>
-<section id="services">
-  <h2 class="section-title">Our Services & Resources</h2>
-  <p class="intro">Explore community support and general financial information. Products and terms are subject to applicable approvals.</p>
-  <div class="grid">
-    <article class="card"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Self-Help Group members" class="card-img" loading="lazy"><h3>SHG Support</h3><p>Information about Self-Help Groups, group participation and financial awareness.</p><a href="#shg">Learn More →</a></article>
-    <article class="card"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Financial documents and calculator" class="card-img" loading="lazy"><h3>Loan Information</h3><p>Understand application steps, eligibility checks, repayment responsibilities and terms.</p><a href="#shg">Learn More →</a></article>
-    <article class="card"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80" alt="Financial literacy study materials" class="card-img" loading="lazy"><h3>Financial Literacy Guide</h3><p>Practical guidance on budgeting, savings, responsible borrowing and fraud awareness.</p><a href="financial-literacy.html">Read the guide →</a></article>
-    <article class="card"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Colleagues working together" class="card-img" loading="lazy"><h3>Career Opportunities</h3><p>Explore opportunities in field operations, member services and administration.</p><a href="#careers">Apply Now →</a></article>
-    <article class="card"><h3>Company Registration Details</h3><p>View the incorporation date, CIN, company status and registered office information.</p><a href="company-information.html">View corporate information →</a></article>
-  </div>
-</section>
-<section id="shg" class="services-alt">
-  <h2 class="section-title">SHG, Loans, RD & FD Information</h2>
-  <p class="intro">General guidance for individuals and groups. Product availability, eligibility, charges and approvals must be confirmed officially.</p>
-  <div class="grid">
-    <article class="card"><h3>1. SHG Support</h3><p>Learn about group participation, financial literacy and enquiry procedures.</p></article>
-    <article class="card"><h3>2. Loan Enquiry</h3><p>Ask about eligibility, required documents, applicable charges and repayment terms. An enquiry does not guarantee loan approval.</p></article>
-    <article class="card"><h3>3. RD / FD Information</h3><p>Contact the company to enquire about savings-related information. Deposit products may only be offered where the company is legally authorized.</p></article>
-  </div>
-  <div class="banner-note"><strong>Important Notice</strong><p>This website does not guarantee loans, deposits or financial returns. Verify applicable terms and legal authorizations before proceeding. Never pay an unofficial agent.</p></div>
-</section>
-<section id="careers" class="careers">
-  <h2 class="section-title">Careers at Shaping Future</h2>
-  <p class="intro">Join our growing team and shape a better future together.</p>
-  <div class="career-box"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Team collaborating at work" class="career-box-img" loading="lazy"><h3 style="color:var(--blue);margin-bottom:12px">Apply for a job / नौकरी के लिए आवेदन करें</h3><p>Open our recruitment application form using the button below.</p><a href="https://forms.gle/xCbJwCqwh99zea549" target="_blank" rel="noopener noreferrer" class="btn">Fill Application Form / फॉर्म भरें ↗</a></div>
-</section>
-<section id="contact">
-  <h2 class="section-title">Contact Us</h2>
-  <p class="intro">For company information, SHG enquiries and recruitment questions, contact our team.</p>
-  <form id="contactForm" action="https://formsubmit.co/shapingfuture22@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="Website enquiry — Shaping Future Microfinance">
-    <input type="hidden" name="_next" value="https://shapingfuturemicrofinance.github.io/shapingfuturemicrofinance/thanks.html">
-    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <div class="form-grid">
-      <div class="field"><label for="contactName">Your Name *</label><input id="contactName" name="Name" required maxlength="100" autocomplete="name"></div>
-      <div class="field"><label for="contactEmail">Email Address *</label><input id="contactEmail" name="_replyto" type="email" required maxlength="150" autocomplete="email"></div>
-      <div class="field full"><label for="contactPhone">Phone Number (optional)</label><input id="contactPhone" name="Phone Number" type="tel" maxlength="30" autocomplete="tel"></div>
-      <div class="field full"><label for="contactSubject">Enquiry Type *</label><select id="contactSubject" name="Enquiry Type" required><option value="" selected disabled>Select an option</option><option>General Enquiry</option><option>SHG Information</option><option>Loan Information</option><option>RD / FD Information</option><option>Careers / Recruitment</option><option>Other</option></select></div>
-      <div class="field full"><label for="contactMessage">Your Message *</label><textarea id="contactMessage" name="Message" required maxlength="3000"></textarea></div>
-    </div>
-    <p class="intro" style="font-size:13px;margin:8px auto">Please do not submit OTPs, passwords, bank details or other sensitive financial information.</p>
-    <button class="btn" type="submit">Send Enquiry</button>
-  </form>
-</section>
-<section class="contact">
-  <div class="contact-info">
-    <h2 class="section-title">Get in Touch</h2>
-    <p><strong>Shaping Future Microfinance Pvt. Ltd.</strong></p>
-    <p><strong>Registered Office:</strong> 10/215 F/F, Dakshin Puri Extn, South Delhi, Delhi, 110062, India</p>
-    <p><strong>Incorporation Date:</strong> June 15, 2022</p>
-    <p><strong>Corporate Identification Number (CIN):</strong> U65990DL2022PTC400053</p>
-    <p><strong>Status:</strong> Active</p>
-    <p>Phone: <a href="tel:+919648361634">+91 9648361634</a></p>
-    <p>Email: <a href="mailto:shapingfuture22@gmail.com">shapingfuture22@gmail.com</a></p>
-    <div class="contact-ctas">
-      <a class="btn btn-whatsapp" href="https://wa.me/919648361634?text=Hello%20Shaping%20Future%20Microfinance%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener noreferrer" aria-label="Contact Shaping Future Microfinance on WhatsApp">WhatsApp Us</a>
-      <a class="btn btn-light" href="company-information.html">Corporate Information</a>
-    </div>
-  </div>
-</section>
-<section id="privacy">
-  <h2 class="section-title">Privacy Notice</h2>
-  <p class="intro">Information submitted through the contact form is sent through FormSubmit to the company email address for responding to the enquiry. Do not submit sensitive personal or financial information. Information should be handled by authorized personnel and retained only as necessary.</p>
-</section>
+<section class="hero" id="home"><div class="hero-inner"><img src="sfmf.png" alt="Shaping Future Microfinance logo" class="hero-logo-img"><div class="eyebrow">Community • Opportunity • Responsibility</div><h1 data-en="Empowering Communities. Shaping a Better Future." data-hi="समुदायों को सशक्त बनाना, बेहतर भविष्य बनाना।">Empowering Communities. Shaping a Better Future.</h1><p data-en="Supporting financial awareness, community development and responsible financial inclusion through a people-focused approach." data-hi="लोगों को केंद्र में रखकर वित्तीय जागरूकता, सामुदायिक विकास और जिम्मेदार वित्तीय समावेशन को बढ़ावा देना।">Supporting financial awareness, community development and responsible financial inclusion through a people-focused approach.</p><div class="hero-buttons"><a class="btn btn-light" href="#about">Explore Our Company</a><a class="btn" href="#contact">Contact Us</a></div></div></section>
+<section id="about" class="about"><h2 class="section-title">About Shaping Future</h2><p class="intro">Our aim is to support communities with accessible information, transparent communication and responsible practices.</p><div class="grid"><article class="card"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="People collaborating on community initiatives" class="card-img" loading="lazy"><h3>Our Mission</h3><p>Encouraging financial awareness, responsible decisions and community participation.</p></article><article class="card"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Professional team discussion" class="card-img" loading="lazy"><h3>Our Approach</h3><p>Transparency, respectful service, accountability and clear communication.</p></article><article class="card"><img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=600&q=80" alt="Community members working together" class="card-img" loading="lazy"><h3>Community Development</h3><p>Promoting financial literacy and community-led development.</p></article></div></section>
+<section id="services"><h2 class="section-title">Our Services & Resources</h2><p class="intro">Explore community support and general financial information. Products and terms are subject to applicable approvals.</p><div class="grid"><article class="card"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Self-Help Group members" class="card-img" loading="lazy"><h3>SHG Support</h3><p>Information about Self-Help Groups, group participation and financial awareness.</p><a href="#shg">Learn More →</a></article><article class="card"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Financial documents and calculator" class="card-img" loading="lazy"><h3>Loan Information</h3><p>Understand application steps, eligibility checks, repayment responsibilities and terms.</p><a href="#shg">Learn More →</a></article><article class="card"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80" alt="Financial literacy study materials" class="card-img" loading="lazy"><h3>Financial Literacy Guide</h3><p>Practical guidance on budgeting, savings, responsible borrowing and fraud awareness.</p><a href="financial-literacy.html">Read the guide →</a></article><article class="card"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Colleagues working together" class="card-img" loading="lazy"><h3>Career Opportunities</h3><p>Explore opportunities in field operations, member services and administration.</p><a href="#careers">Apply Now →</a></article><article class="card"><h3>Company Registration Details</h3><p>View the incorporation date, CIN and registered office information.</p><a href="company-information.html">View corporate information →</a></article></div></section>
+<section id="shg" class="services-alt"><h2 class="section-title">SHG, Loans, RD & FD Information</h2><p class="intro">General guidance for individuals and groups. Product availability, eligibility, charges and approvals must be confirmed officially.</p><div class="grid"><article class="card"><h3>1. SHG Support</h3><p>Learn about group participation, financial literacy and enquiry procedures.</p></article><article class="card"><h3>2. Loan Enquiry</h3><p>Ask about eligibility, required documents, applicable charges and repayment terms. An enquiry does not guarantee loan approval.</p></article><article class="card"><h3>3. RD / FD Information</h3><p>Contact the company to enquire about savings-related information. Deposit products may only be offered where the company is legally authorized.</p></article></div><div class="banner-note"><strong>Important Notice</strong><p>This website does not guarantee loans, deposits or financial returns. Verify applicable terms and legal authorizations before proceeding. Never pay an unofficial agent.</p></div></section>
+<section id="careers" class="careers"><h2 class="section-title">Careers at Shaping Future</h2><p class="intro">Join our growing team and shape a better future together.</p><div class="career-box"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Team collaborating at work" class="career-box-img" loading="lazy"><h3 style="color:var(--blue);margin-bottom:12px">Apply for a job / नौकरी के लिए आवेदन करें</h3><p>Open our recruitment application form using the button below.</p><a href="https://forms.gle/xCbJwCqwh99zea549" target="_blank" rel="noopener noreferrer" class="btn">Fill Application Form / फॉर्म भरें ↗</a></div></section>
+<section id="contact"><h2 class="section-title">Contact Us</h2><p class="intro">For company information, SHG enquiries and recruitment questions, contact our team.</p><form id="contactForm" action="https://formsubmit.co/shapingfuture22@gmail.com" method="POST"><input type="hidden" name="_subject" value="Website enquiry — Shaping Future Microfinance"><input type="hidden" name="_next" value="https://shapingfuturemicrofinance.github.io/shapingfuturemicrofinance/thanks.html"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="form-grid"><div class="field"><label for="contactName">Your Name *</label><input id="contactName" name="Name" required maxlength="100" autocomplete="name"></div><div class="field"><label for="contactEmail">Email Address *</label><input id="contactEmail" name="_replyto" type="email" required maxlength="150" autocomplete="email"></div><div class="field full"><label for="contactPhone">Phone Number (optional)</label><input id="contactPhone" name="Phone Number" type="tel" maxlength="30" autocomplete="tel"></div><div class="field full"><label for="contactSubject">Enquiry Type *</label><select id="contactSubject" name="Enquiry Type" required><option value="" selected disabled>Select an option</option><option>General Enquiry</option><option>SHG Information</option><option>Loan Information</option><option>RD / FD Information</option><option>Careers / Recruitment</option><option>Other</option></select></div><div class="field full"><label for="contactMessage">Your Message *</label><textarea id="contactMessage" name="Message" required maxlength="3000"></textarea></div></div><p class="intro" style="font-size:13px;margin:8px auto">Please do not submit OTPs, passwords, bank details or other sensitive financial information.</p><button class="btn" type="submit">Send Enquiry</button></form></section>
+<section class="contact"><div class="contact-info"><h2 class="section-title">Get in Touch</h2><p><strong>Shaping Future Microfinance Pvt. Ltd.</strong></p><p><strong>Registered Office:</strong> 10/215 F/F, Dakshin Puri Extn, South Delhi, Delhi, 110062, India</p><p><strong>Incorporation Date:</strong> June 15, 2022</p><p><strong>Corporate Identification Number (CIN):</strong> U65990DL2022PTC400053</p><p>Phone: <a href="tel:+919648361634">+91 9648361634</a></p><p>Email: <a href="mailto:shapingfuture22@gmail.com">shapingfuture22@gmail.com</a></p><div class="contact-ctas"><a class="btn btn-whatsapp" href="https://wa.me/919648361634?text=Hello%20Shaping%20Future%20Microfinance%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener noreferrer" aria-label="Contact Shaping Future Microfinance on WhatsApp">WhatsApp Us</a><a class="btn btn-light" href="company-information.html">Corporate Information</a></div></div></section>
+<section id="privacy"><h2 class="section-title">Privacy Notice</h2><p class="intro">Information submitted through the contact form is sent through FormSubmit to the company email address for responding to the enquiry. Do not submit sensitive personal or financial information. Information should be handled by authorized personnel and retained only as necessary.</p></section>
 </main>
-<footer>
-  <p>© <span id="year"></span> Shaping Future Microfinance Pvt. Ltd.</p>
-  <div class="footer-company">
-    <p><strong>Incorporation Date:</strong> June 15, 2022 &nbsp;|&nbsp; <strong>CIN:</strong> U65990DL2022PTC400053 &nbsp;|&nbsp; <strong>Status:</strong> Active</p>
-    <p><strong>Registered Office:</strong> 10/215 F/F, Dakshin Puri Extn, South Delhi, Delhi, 110062, India</p>
-  </div>
-  <p><a href="company-information.html">Corporate Information</a> | <a href="#privacy">Privacy Notice</a> | <a href="mailto:shapingfuture22@gmail.com">Contact</a></p>
-  <p>Website information does not constitute a financial offer or guarantee.</p>
-</footer>
+<footer><p>© <span id="year"></span> Shaping Future Microfinance Pvt. Ltd.</p><div class="footer-company"><p><strong>Incorporation Date:</strong> June 15, 2022 &nbsp;|&nbsp; <strong>CIN:</strong> U65990DL2022PTC400053</p><p><strong>Registered Office:</strong> 10/215 F/F, Dakshin Puri Extn, South Delhi, Delhi, 110062, India</p></div><p><a href="company-information.html">Corporate Information</a> | <a href="#privacy">Privacy Notice</a> | <a href="mailto:shapingfuture22@gmail.com">Contact</a></p><p>Website information does not constitute a financial offer or guarantee.</p></footer>
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 let language="en";
